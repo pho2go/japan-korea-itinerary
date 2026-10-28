@@ -118,6 +118,7 @@
                 <button onclick="filterType('flight')" id="btn-flight" class="filter-btn px-3 py-1.5 rounded-lg font-medium bg-slate-100 text-slate-600 hover:bg-slate-200 transition">✈️ Flights</button>
                 <button onclick="filterType('transfer')" id="btn-transfer" class="filter-btn px-3 py-1.5 rounded-lg font-medium bg-slate-100 text-slate-600 hover:bg-slate-200 transition">🚆 Transfers</button>
                 <button onclick="filterType('hotel')" id="btn-hotel" class="filter-btn px-3 py-1.5 rounded-lg font-medium bg-slate-100 text-slate-600 hover:bg-slate-200 transition">🏨 Hotels</button>
+                <button onclick="filterType('tour')" id="btn-tour" class="filter-btn px-3 py-1.5 rounded-lg font-medium bg-slate-100 text-slate-600 hover:bg-slate-200 transition">🗺️ Tours</button>
             </div>
             
             <div class="relative min-w-[240px]">
@@ -179,7 +180,7 @@
                                 </ol>
                                 <div class="mt-2 text-xs space-y-0.5">
                                     <p><span class="font-semibold text-slate-800">Cost:</span> ¥2,580 counter; ¥2,310 online e-ticket</p>
-                                    <p><span class="font-semibold text-amber-700 bg-amber-50 px-1 rounded">Book:</span> Window opened Oct 8 — buy e-ticket now. Skyliner runs until ~11 PM.</p>
+                                    <p><span class="font-semibold text-amber-700 bg-amber-50 px-1 rounded">Book:</span> Buy the e-ticket now. Skyliner runs until ~11 PM.</p>
                                 </div>
                             </td>
                             <td class="py-3.5 px-4 align-top text-right text-xs whitespace-nowrap">
@@ -212,35 +213,68 @@
                             </td>
                         </tr>
 
-                        <!-- Row 4: Tokyo -> Nikko -->
+                        <!-- Tour: Mt Fuji -->
+                        <tr class="row-item row-tour hover:bg-slate-50/50 transition">
+                            <td class="py-3.5 px-4 font-semibold text-slate-700 whitespace-nowrap align-top">
+                                Tue, Nov 10
+                            </td>
+                            <td class="py-3.5 px-4 align-top">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-violet-50 text-violet-700 border-violet-200/60 border mb-1">
+                                    <i class="fa-solid fa-route"></i> Tour
+                                </span>
+                                <div class="font-bold text-slate-800">Mt. Fuji Day Tour</div>
+                                <div class="text-xs text-slate-500">Private, customizable (group of 6)</div>
+                            </td>
+                            <td class="py-3.5 px-4 tight-cell align-top">
+                                <ol class="list-decimal list-inside text-slate-700 text-xs space-y-0.5 font-medium">
+                                    <li>Hotel pickup at APA Ueno (time confirmed 1–2 days before via WhatsApp)</li>
+                                    <li>Mt. Fuji area: Kawaguchiko autumn leaves, Chureito Pagoda</li>
+                                    <li>Return to the hotel (10–11 hours)</li>
+                                </ol>
+                                <div class="mt-2 text-xs space-y-0.5">
+                                    <p><span class="font-semibold text-emerald-700 bg-emerald-50 px-1 rounded">Booked:</span> GetYourGuide, $314.28 for the group; charged Nov 7.</p>
+                                    <p class="text-slate-500"><i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i> Free cancellation until 8:00 AM Nov 9.</p>
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 align-top text-right text-xs space-y-1">
+                                <div>
+                                    <a href="https://www.getyourguide.com/" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700 font-medium">
+                                        GetYourGuide <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- Row 4: Tokyo -> Nikko (private van) -->
                         <tr class="row-item row-transfer hover:bg-slate-50/50 transition">
                             <td class="py-3.5 px-4 font-semibold text-slate-700 whitespace-nowrap align-top">
                                 Thu, Nov 12
                             </td>
                             <td class="py-3.5 px-4 align-top">
-                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200/60 mb-1">
-                                    <i class="fa-solid fa-train"></i> Transfer
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-indigo-50 text-indigo-700 border-indigo-200/60 border mb-1">
+                                    <i class="fa-solid fa-van-shuttle"></i> Transfer
                                 </span>
                                 <div class="font-bold text-slate-800">Tokyo → Nikko</div>
+                                <div class="text-xs text-slate-500">Private van with sightseeing (group of 6)</div>
                             </td>
                             <td class="py-3.5 px-4 tight-cell align-top">
                                 <ol class="list-decimal list-inside text-slate-700 text-xs space-y-0.5 font-medium">
-                                    <li>Ginza Line Ueno → Asakusa (5 min)</li>
-                                    <li><strong class="text-slate-900">Spacia X</strong> to Tobu-Nikko (1h50m) — 9:00 or 10:00 AM from Asakusa</li>
-                                    <li>Taxi or bus to ryokan (10 min)</li>
+                                    <li>8:00 AM pickup at APA Hotel Keisei Ueno Ekimae (Toyota HiAce, luggage rides along)</li>
+                                    <li>Akechidaira Ropeway → Kegon Falls (lunch) → Lake Yunoko → Ryuzu Falls → Lake Chuzenji</li>
+                                    <li>Drop-off at the ryokan around 4:45 PM</li>
                                 </ol>
                                 <div class="mt-2 text-xs space-y-0.5">
-                                    <p><span class="font-semibold text-slate-800">Cost:</span> ¥3,340 standard seat (¥1,400 fare + ¥1,940 express)</p>
-                                    <p><span class="font-semibold text-amber-700 bg-amber-50 px-1 rounded">Book:</span> Opened Oct 12 — book now on Tobu site.</p>
-                                    <p class="text-slate-500"><i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i> <strong class="text-slate-700">Tip:</strong> Skip the Nikko Pass.</p>
+                                    <p><span class="font-semibold text-emerald-700 bg-emerald-50 px-1 rounded">Booked:</span> Sun Taxi Japan, ¥75,000 for 6 (about 8 hours; fuel, tolls, parking included).</p>
+                                    <p><span class="font-semibold text-slate-800">Cost:</span> <strong>¥12,500 per person, cash.</strong> Overtime ¥6,000/hour past 8 hours.</p>
+                                    <p class="text-slate-500"><i class="fa-solid fa-lightbulb text-amber-500 mr-1"></i> Sunset is around 4:45 PM; mornings in Nikko are near freezing.</p>
                                 </div>
                             </td>
-                            <td class="py-3.5 px-4 align-top text-right text-xs whitespace-nowrap">
-                                <a href="https://ekitan.com/en/article/spacia-x" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-brand-600 hover:text-brand-700 font-medium">
-                                    Spacia X <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                                </a>
+                            <td class="py-3.5 px-4 align-top text-right text-xs space-y-1">
+                                <span class="text-slate-400">—</span>
                             </td>
                         </tr>
+
+                        
 
                         <!-- Row 5: Ryokan Nikko -->
                         <tr class="row-item row-hotel hover:bg-slate-50/50 transition bg-slate-50/30">
@@ -283,8 +317,8 @@
                                     <li><strong class="text-slate-900">Hokuriku Shinkansen</strong> to Nagano (1 hr); hotel inside station</li>
                                 </ol>
                                 <div class="mt-2 text-xs space-y-0.5">
-                                    <p><span class="font-semibold text-slate-800">Cost:</span> ~¥11,000–12,000 est.</p>
-                                    <p><span class="font-semibold text-amber-700 bg-amber-50 px-1 rounded">Book:</span> Window opened Oct 14 — book on Eki-net or buy at JR Ueno office on Nov 9.</p>
+                                    <p><span class="font-semibold text-slate-800">Cost:</span> ~¥9,700–12,000 est.</p>
+                                    <p><span class="font-semibold text-amber-700 bg-amber-50 px-1 rounded">Book:</span> Book on Eki-net now or buy at JR Ueno office on Nov 9.</p>
                                 </div>
                             </td>
                             <td class="py-3.5 px-4 align-top text-right text-xs space-y-1">
@@ -315,7 +349,9 @@
                             </td>
                             <td class="py-3.5 px-4 tight-cell align-top text-xs text-slate-700">
                                 <p class="font-medium">Superior Twin</p>
-                                <p class="text-slate-500"><i class="fa-solid fa-utensils text-[10px] mr-1"></i> Breakfast included</p>
+                                <p class="text-slate-500"><i class="fa-solid fa-utensils text-[10px] mr-1"></i> Breakfast Nov 15–18 (not the first night)</p>
+                                <p class="text-amber-700 mt-1"><i class="fa-solid fa-circle-info mr-1"></i> Two reservations: Nov 14 (direct, pay at hotel) + Nov 15–18 (Expedia). Ask to keep the same room.</p>
+                                <p class="text-slate-500"><i class="fa-solid fa-shirt text-[10px] mr-1"></i> Coin laundry</p>
                             </td>
                             <td class="py-3.5 px-4 align-top text-right text-xs whitespace-nowrap">
                                 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%A1%E3%83%88%E3%83%AD%E3%83%9D%E3%83%AA%E3%82%BF%E3%83%B3%E9%95%B7%E9%87%8E%20%E9%95%B7%E9%87%8E%E7%9C%8C%E9%95%B7%E9%87%8E%E5%B8%82%E5%8D%97%E7%9F%B3%E5%A0%82%E7%94%BA1346" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-slate-600 hover:text-slate-900 font-medium">
@@ -324,43 +360,73 @@
                             </td>
                         </tr>
 
-                        <!-- Row 8: Nagano -> Takayama -->
+                        <!-- Tour: Togakushi -->
+                        <tr class="row-item row-tour hover:bg-slate-50/50 transition">
+                            <td class="py-3.5 px-4 font-semibold text-slate-700 whitespace-nowrap align-top">
+                                Mon, Nov 16
+                            </td>
+                            <td class="py-3.5 px-4 align-top">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-violet-50 text-violet-700 border-violet-200/60 border mb-1">
+                                    <i class="fa-solid fa-route"></i> Tour
+                                </span>
+                                <div class="font-bold text-slate-800">Togakushi Shrines</div>
+                                <div class="text-xs text-slate-500">Day trip from Nagano</div>
+                            </td>
+                            <td class="py-3.5 px-4 tight-cell align-top">
+                                <ol class="list-decimal list-inside text-slate-700 text-xs space-y-0.5 font-medium">
+                                    <li>Bus from Nagano Station up to Togakushi (about 1 hr)</li>
+                                    <li>2 km cedar-lined walk to the Okusha (Upper Shrine)</li>
+                                    <li>Togakushi soba for lunch; bus back to Nagano</li>
+                                </ol>
+                                <div class="mt-2 text-xs space-y-0.5">
+                                    <p><span class="font-semibold text-emerald-700 bg-emerald-50 px-1 rounded">Booked:</span> Round-trip bus tickets, ¥30,000 for the group (already paid).</p>
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 align-top text-right text-xs space-y-1">
+                                <span class="text-slate-400">—</span>
+                            </td>
+                        </tr>
+
+                        <!-- Row 8: Nagano -> Takayama (Matsumoto bus) -->
                         <tr class="row-item row-transfer hover:bg-slate-50/50 transition">
                             <td class="py-3.5 px-4 font-semibold text-slate-700 whitespace-nowrap align-top">
                                 Wed, Nov 18
                             </td>
                             <td class="py-3.5 px-4 align-top">
-                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200/60 mb-1">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-indigo-50 text-indigo-700 border-indigo-200/60 border mb-1">
                                     <i class="fa-solid fa-train"></i> Transfer
                                 </span>
                                 <div class="font-bold text-slate-800">Nagano → Takayama</div>
+                                <div class="text-xs text-slate-500">via Matsumoto Castle</div>
                             </td>
                             <td class="py-3.5 px-4 tight-cell align-top">
                                 <ol class="list-decimal list-inside text-slate-700 text-xs space-y-0.5 font-medium">
-                                    <li><strong class="text-slate-900">Hokuriku Shinkansen</strong> Nagano → Toyama (47–60 min); arrive by ~9:30</li>
-                                    <li><strong class="text-slate-900">Ltd. Express Hida</strong> Toyama 9:54 → Takayama 11:25 (Miyagawa gorge)</li>
-                                    <li>Walk 5 min to hotel (~350 m)</li>
+                                    <li><strong class="text-slate-900">Ltd. Express Shinano</strong> Nagano ~8:00 → Matsumoto ~9:15 (50 min)</li>
+                                    <li>Store bags in station lockers; visit Matsumoto Castle and Nakamachi Street</li>
+                                    <li><strong class="text-slate-900">Highway bus 26507</strong> Matsumoto Bus Terminal 13:05 → Takayama Nohi Bus Center 15:38</li>
+                                    <li>Short walk or taxi to the hotel</li>
                                 </ol>
                                 <div class="mt-2 text-xs space-y-0.5">
-                                    <p><span class="font-semibold text-slate-800">Cost:</span> ~¥9,050 + Hida surcharge (~¥2,000 est.)</p>
-                                    <p><span class="font-semibold text-amber-700 bg-amber-50 px-1 rounded">Book:</span> Seats open Oct 18. Buy both legs at JR Ueno (Nov 9) or Nagano Station (Nov 14).</p>
-                                    <p><strong>Backup:</strong> Hida 13:08 → 14:39 (only 4 a day: 7:58, 9:54, 13:08, 17:14). Or Google's local trains via Inotani, no reservation (~3h20m, little luggage space).</p>
-                                    <p class="text-slate-500"><i class="fa-solid fa-circle-info mr-1"></i> Sugihara–Inotani rail reopened May 30, 2026.</p>
+                                    <p><span class="font-semibold text-emerald-700 bg-emerald-50 px-1 rounded">Booked:</span> Bus reserved for 6 on highwaybus.com — download the mobile ticket.</p>
+                                    <p><span class="font-semibold text-slate-800">Cost:</span> Bus ¥4,400 + Shinano train (buy at Nagano Station).</p>
+                                    <p class="text-rose-600"><i class="fa-solid fa-triangle-exclamation mr-1"></i> A second reservation exists: 3 seats on bus 26513 (10:55). Confirm which one the group keeps.</p>
                                 </div>
                             </td>
                             <td class="py-3.5 px-4 align-top text-right text-xs space-y-1">
                                 <div>
-                                    <a href="https://timetable.jr-odekake.net/line-timetable/2366" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700 font-medium">
-                                        Hida Timetable <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                    <a href="https://www.highwaybus.com/gp/inbound/inbRsvSearch/?lang=EN" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700 font-medium">
+                                        Bus Reservation <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                                     </a>
                                 </div>
                                 <div>
-                                    <a href="https://www.eki-net.com/en/jreast-train-reservation/Top/Index" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-slate-800 font-medium">
-                                        Eki-net <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                    <a href="https://www.nouhibus.co.jp/english/" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-slate-800 font-medium">
+                                        Nohi Bus <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                                     </a>
                                 </div>
                             </td>
                         </tr>
+
+                        
 
                         <!-- Row 9: Hotel Takayama -->
                         <tr class="row-item row-hotel hover:bg-slate-50/50 transition bg-slate-50/30">
@@ -377,6 +443,7 @@
                             <td class="py-3.5 px-4 tight-cell align-top text-xs text-slate-700">
                                 <p class="font-medium">Japanese-Western Twin</p>
                                 <p class="text-slate-500"><i class="fa-solid fa-utensils text-[10px] mr-1"></i> Breakfast included</p>
+                                <p class="text-slate-500"><i class="fa-solid fa-shirt text-[10px] mr-1"></i> Coin laundry</p>
                             </td>
                             <td class="py-3.5 px-4 align-top text-right text-xs whitespace-nowrap">
                                 <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%A3%9B%E9%A8%A8%E8%8A%B1%E9%87%8C%E3%81%AE%E6%B9%AF%20%E9%AB%98%E5%B1%B1%E6%A1%9C%E5%BA%B5%20%E5%B2%90%E9%98%9C%E7%9C%8C%E9%AB%98%E5%B1%B1%E5%B8%82%E8%8A%B1%E9%87%8C%E7%94%BA4-313" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-slate-600 hover:text-slate-900 font-medium">
@@ -385,37 +452,77 @@
                             </td>
                         </tr>
 
-                        <!-- Row 10: Takayama -> Tokyo -->
+                        <!-- Tour: Takayama -->
+                        <tr class="row-item row-tour hover:bg-slate-50/50 transition">
+                            <td class="py-3.5 px-4 font-semibold text-slate-700 whitespace-nowrap align-top">
+                                Fri, Nov 20
+                            </td>
+                            <td class="py-3.5 px-4 align-top">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-violet-50 text-violet-700 border-violet-200/60 border mb-1">
+                                    <i class="fa-solid fa-route"></i> Tour
+                                </span>
+                                <div class="font-bold text-slate-800">Takayama Private Tour</div>
+                                <div class="text-xs text-slate-500">Local guide + car, 8 hours (group of 6)</div>
+                            </td>
+                            <td class="py-3.5 px-4 tight-cell align-top">
+                                <ol class="list-decimal list-inside text-slate-700 text-xs space-y-0.5 font-medium">
+                                    <li>8:00 AM pickup at the hotel</li>
+                                    <li>Itinerary still to choose — see Trip Notes below</li>
+                                    <li>Drop-off at the hotel</li>
+                                </ol>
+                                <div class="mt-2 text-xs space-y-0.5">
+                                    <p><span class="font-semibold text-emerald-700 bg-emerald-50 px-1 rounded">Booked:</span> GetYourGuide, $443 for the group; moved from Nov 19 to Nov 20.</p>
+                                    <p class="text-rose-600"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Kamikochi is closed for the season from Nov 16.</p>
+                                </div>
+                            </td>
+                            <td class="py-3.5 px-4 align-top text-right text-xs space-y-1">
+                                <div>
+                                    <a href="https://www.getyourguide.com/" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700 font-medium">
+                                        GetYourGuide <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                    </a>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!-- Row 10: Takayama -> Ueno (via Toyama) -->
                         <tr class="row-item row-transfer hover:bg-slate-50/50 transition">
                             <td class="py-3.5 px-4 font-semibold text-slate-700 whitespace-nowrap align-top">
                                 Sun, Nov 22
                             </td>
                             <td class="py-3.5 px-4 align-top">
-                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-indigo-50 text-indigo-700 border border-indigo-200/60 mb-1">
+                                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-semibold bg-indigo-50 text-indigo-700 border-indigo-200/60 border mb-1">
                                     <i class="fa-solid fa-train"></i> Transfer
                                 </span>
-                                <div class="font-bold text-slate-800">Takayama → Tokyo</div>
+                                <div class="font-bold text-slate-800">Takayama → Ueno</div>
+                                <div class="text-xs text-slate-500">via Toyama</div>
                             </td>
                             <td class="py-3.5 px-4 tight-cell align-top">
                                 <ol class="list-decimal list-inside text-slate-700 text-xs space-y-0.5 font-medium">
-                                    <li><strong class="text-slate-900">Ltd. Express Hida</strong> to Nagoya (2h20m)</li>
-                                    <li><strong class="text-slate-900">Tokaido Shinkansen</strong> to Tokyo (1h40m)</li>
-                                    <li>JR Yamanote / Keihin-Tohoku to Ueno (8 min)</li>
+                                    <li><strong class="text-slate-900">Ltd. Express Hida</strong> Takayama → Toyama (about 90 min, Miyagawa gorge)</li>
+                                    <li>Change at Toyama</li>
+                                    <li><strong class="text-slate-900">Hokuriku Shinkansen</strong> (Kagayaki/Hakutaka) Toyama → Ueno, direct (2–2.5 hrs)</li>
                                 </ol>
-                                <div class="mt-2 text-xs space-y-1">
-                                    <p><span class="font-semibold text-slate-800">Cost:</span> ~¥16,500</p>
-                                    <div class="p-2 bg-amber-50/80 border border-amber-200 rounded-lg text-amber-900 text-xs leading-tight">
-                                        <i class="fa-solid fa-triangle-exclamation text-amber-600 mr-1"></i> <strong>Holiday Capacity Alert:</strong> Nov 22 starts a 3-day holiday weekend. Buy Hida + Nozomi at JR Ueno office on Nov 9.
-                                    </div>
-                                    <p class="text-slate-500"><i class="fa-solid fa-suitcase mr-1"></i> Bags &gt;160 cm need oversized-baggage seats on Shinkansen.</p>
+                                <div class="mt-2 text-xs space-y-0.5">
+                                    <p><span class="font-semibold text-slate-800">Cost:</span> ~$108 per person; about 4h15m total.</p>
+                                    <div class="p-2 bg-amber-50/80 border border-amber-200 rounded-lg text-amber-900 text-xs leading-tight"><i class="fa-solid fa-triangle-exclamation text-amber-600 mr-1"></i> <strong>Holiday weekend:</strong> only 4 Hida run Toyama–Takayama each day. Reserve both legs at JR Ueno on Nov 9.</div>
+                                    <p class="text-slate-500"><i class="fa-solid fa-suitcase mr-1"></i> Bags &gt;160 cm need oversized-baggage seats on the Shinkansen.</p>
                                 </div>
                             </td>
-                            <td class="py-3.5 px-4 align-top text-right text-xs whitespace-nowrap">
-                                <a href="https://smart-ex.jp/en/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-brand-600 hover:text-brand-700 font-medium">
-                                    Smart EX <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                                </a>
+                            <td class="py-3.5 px-4 align-top text-right text-xs space-y-1">
+                                <div>
+                                    <a href="https://timetable.jr-odekake.net/line-timetable/2366" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700 font-medium">
+                                        Hida Timetable <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.eki-net.com/en/jreast-train-reservation/Top/Index" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-slate-800 font-medium">
+                                        Eki-net <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                                    </a>
+                                </div>
                             </td>
                         </tr>
+
+                        
 
                         <!-- Row 11: Hotel Crown Hills -->
                         <tr class="row-item row-hotel hover:bg-slate-50/50 transition bg-slate-50/30">
@@ -460,7 +567,7 @@
                                 </ol>
                                 <div class="mt-2 text-xs space-y-0.5">
                                     <p><span class="font-semibold text-slate-800">Cost:</span> ¥2,580 counter, ¥2,310 online</p>
-                                    <p><span class="font-semibold text-amber-700 bg-amber-50 px-1 rounded">Book:</span> Public holiday — reserve Skyliner early (opens Oct 23).</p>
+                                    <p><span class="font-semibold text-amber-700 bg-amber-50 px-1 rounded">Book:</span> Public holiday — reserve the Skyliner now.</p>
                                 </div>
                             </td>
                             <td class="py-3.5 px-4 align-top text-right text-xs whitespace-nowrap">
@@ -527,7 +634,8 @@
                             </td>
                             <td class="py-3.5 px-4 tight-cell align-top text-xs text-slate-700">
                                 <p class="font-medium">Deluxe Twin (Sea View)</p>
-                                <p class="text-slate-500"><i class="fa-solid fa-water-ladder text-[10px] mr-1"></i> Outdoor Pool Access</p>
+                                <p class="text-slate-500"><i class="fa-solid fa-water-ladder text-[10px] mr-1"></i> Pool & spa access · Breakfast for 2</p>
+                                <p class="text-amber-700 mt-1"><i class="fa-solid fa-circle-info mr-1"></i> Pay at hotel: ₩2,014,650 (~$1,485) at check-in. Free cancellation until Nov 21.</p>
                             </td>
                             <td class="py-3.5 px-4 align-top text-right text-xs whitespace-nowrap">
                                 <a href="https://www.google.com/maps/search/?api=1&amp;query=Paradise%20Hotel%20Busan%2C%20296%20Haeundaehaebyeon-ro%2C%20Haeundae-gu%2C%20Busan" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-slate-600 hover:text-slate-900 font-medium">
@@ -556,6 +664,7 @@
                                 <div class="mt-2 text-xs space-y-0.5">
                                     <p><span class="font-semibold text-slate-800">Cost:</span> ₩52,600 standard class</p>
                                     <p><span class="font-semibold text-amber-700 bg-amber-50 px-1 rounded">Book:</span> Open now — Korea moved to 2-month advance booking on Oct 1, 2026. Book via etk.srail.kr or the Korail+ app.</p>
+                                    <p class="text-rose-600"><i class="fa-solid fa-triangle-exclamation mr-1"></i> No booking confirmation found yet — confirm who is booking it.</p>
                                     <p class="text-slate-500">Fallback: KTX to Seoul Station (₩59,800)</p>
                                 </div>
                             </td>
@@ -658,7 +767,7 @@
                     <h2 class="text-lg font-bold text-slate-900">Traveler Checklist & Bookings</h2>
                 </div>
                 <div class="text-xs font-semibold text-slate-500">
-                    <span id="checkedCount">0</span> / <span id="totalCount">12</span> Completed
+                    <span id="checkedCount">0</span> / <span id="totalCount">13</span> Completed
                 </div>
             </div>
 
@@ -674,7 +783,7 @@
                 </label>
                 <label class="flex items-start gap-2.5 p-2.5 rounded-lg hover:bg-slate-50 cursor-pointer transition border border-transparent hover:border-slate-200">
                     <input type="checkbox" onchange="updateProgress()" class="chk-item mt-0.5 rounded text-brand-600 focus:ring-brand-500">
-                    <span>Book Spacia X for Nov 12 — window open now</span>
+                    <span>Cancel the duplicate GetYourGuide Nikko tour (Nov 12, 8 AM) — the Sun Taxi van replaces it</span>
                 </label>
                 <label class="flex items-start gap-2.5 p-2.5 rounded-lg hover:bg-slate-50 cursor-pointer transition border border-transparent hover:border-slate-200">
                     <input type="checkbox" onchange="updateProgress()" class="chk-item mt-0.5 rounded text-brand-600 focus:ring-brand-500">
@@ -682,19 +791,19 @@
                 </label>
                 <label class="flex items-start gap-2.5 p-2.5 rounded-lg hover:bg-slate-50 cursor-pointer transition border border-transparent hover:border-slate-200">
                     <input type="checkbox" onchange="updateProgress()" class="chk-item mt-0.5 rounded text-brand-600 focus:ring-brand-500">
-                    <span>Buy Skyliner e-tickets for Nov 8 (open now) & Nov 23 (opens Oct 23)</span>
+                    <span>Buy Skyliner e-tickets for Nov 8 and Nov 23</span>
                 </label>
                 <label class="flex items-start gap-2.5 p-2.5 rounded-lg hover:bg-slate-50 cursor-pointer transition border border-transparent hover:border-slate-200">
                     <input type="checkbox" onchange="updateProgress()" class="chk-item mt-0.5 rounded text-brand-600 focus:ring-brand-500">
-                    <span>Reserve Nov 18 Shinkansen to Toyama + Hida 9:54 to Takayama (opens Oct 18)</span>
+                    <span>Nov 18: download the Matsumoto → Takayama bus ticket; settle the duplicate 10:55 bus seats</span>
                 </label>
                 <label class="flex items-start gap-2.5 p-2.5 rounded-lg hover:bg-slate-50 cursor-pointer transition border border-transparent hover:border-slate-200">
                     <input type="checkbox" onchange="updateProgress()" class="chk-item mt-0.5 rounded text-brand-600 focus:ring-brand-500">
-                    <span>Reserve Hida + Tokaido Shinkansen seats for Nov 22 (add oversized baggage)</span>
+                    <span>Reserve Nov 22 Hida to Toyama + Hokuriku Shinkansen to Ueno (add oversized baggage)</span>
                 </label>
                 <label class="flex items-start gap-2.5 p-2.5 rounded-lg hover:bg-slate-50 cursor-pointer transition border border-transparent hover:border-slate-200">
                     <input type="checkbox" onchange="updateProgress()" class="chk-item mt-0.5 rounded text-brand-600 focus:ring-brand-500">
-                    <span>Book SRT Busan → Suseo for Nov 26 — open now (2-month window)</span>
+                    <span>Book SRT Busan → Suseo for Nov 26 — not booked yet (2-month window open)</span>
                 </label>
                 <label class="flex items-start gap-2.5 p-2.5 rounded-lg hover:bg-slate-50 cursor-pointer transition border border-transparent hover:border-slate-200">
                     <input type="checkbox" onchange="updateProgress()" class="chk-item mt-0.5 rounded text-brand-600 focus:ring-brand-500">
@@ -712,6 +821,88 @@
                     <input type="checkbox" onchange="updateProgress()" class="chk-item mt-0.5 rounded text-brand-600 focus:ring-brand-500">
                     <span>Complete <a href="https://www.vjw.digital.go.jp/" target="_blank" rel="noopener noreferrer" class="text-brand-600 underline">Visit Japan Web</a> & check <a href="https://www.k-eta.go.kr" target="_blank" rel="noopener noreferrer" class="text-brand-600 underline">Korea K-ETA</a> / e-arrival</span>
                 </label>
+                <label class="flex items-start gap-2.5 p-2.5 rounded-lg hover:bg-slate-50 cursor-pointer transition border border-transparent hover:border-slate-200">
+                    <input type="checkbox" onchange="updateProgress()" class="chk-item mt-0.5 rounded text-brand-600 focus:ring-brand-500">
+                    <span>Bring ¥12,500 cash per person for the Nov 12 van</span>
+                </label>
+                <label class="flex items-start gap-2.5 p-2.5 rounded-lg hover:bg-slate-50 cursor-pointer transition border border-transparent hover:border-slate-200">
+                    <input type="checkbox" onchange="updateProgress()" class="chk-item mt-0.5 rounded text-brand-600 focus:ring-brand-500">
+                    <span>Pick the Nov 20 Takayama tour itinerary so the guide can reserve lunch</span>
+                </label>
+            </div>
+        </section>
+
+        <!-- Trip Notes -->
+        <section id="notes" class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200/80">
+            <div class="flex items-center justify-between pb-4 border-b border-slate-100">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-note-sticky text-brand-600 text-lg"></i>
+                    <h2 class="text-lg font-bold text-slate-900">Trip Notes</h2>
+                </div>
+                <div class="text-xs font-semibold text-slate-500">Updated Oct 28, 2026 from the group's emails and plans</div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 pt-4 text-sm text-slate-700">
+                <div>
+                    <h3 class="font-bold text-slate-900 mb-2">Day-by-day plan (Japan, with the group)</h3>
+                    <table class="w-full text-xs">
+                        <tbody class="divide-y divide-slate-100">
+                            <tr><td class="py-1.5 pr-3 font-semibold whitespace-nowrap align-top">Nov 8</td><td class="py-1.5">Arrive; Skyliner to Ueno, check in, dinner</td></tr>
+                            <tr><td class="py-1.5 pr-3 font-semibold whitespace-nowrap align-top">Nov 9</td><td class="py-1.5">Rest morning; JR Ueno office to buy the Nov 14 and Nov 22 train tickets; Ueno Park</td></tr>
+                            <tr><td class="py-1.5 pr-3 font-semibold whitespace-nowrap align-top">Nov 10</td><td class="py-1.5">Mt. Fuji private tour</td></tr>
+                            <tr><td class="py-1.5 pr-3 font-semibold whitespace-nowrap align-top">Nov 11</td><td class="py-1.5">Tokyo: Skytree, Shinjuku Gyoen, Shibuya Crossing, Meiji Jingu</td></tr>
+                            <tr><td class="py-1.5 pr-3 font-semibold whitespace-nowrap align-top">Nov 12</td><td class="py-1.5">Private van to Nikko with Okunikko sightseeing</td></tr>
+                            <tr><td class="py-1.5 pr-3 font-semibold whitespace-nowrap align-top">Nov 13</td><td class="py-1.5">Nikko on foot: Toshogu Shrine, Shinkyo Bridge, Kanmangafuchi Abyss</td></tr>
+                            <tr><td class="py-1.5 pr-3 font-semibold whitespace-nowrap align-top">Nov 14</td><td class="py-1.5">Trains to Nagano (JR Nikko Line → Utsunomiya → Omiya → Nagano)</td></tr>
+                            <tr><td class="py-1.5 pr-3 font-semibold whitespace-nowrap align-top">Nov 15</td><td class="py-1.5">Zenkoji Temple, Nakamise Street, Matsushiro Castle ruins; dinner at Monzen Terrace Enya</td></tr>
+                            <tr><td class="py-1.5 pr-3 font-semibold whitespace-nowrap align-top">Nov 16</td><td class="py-1.5">Togakushi Shrines (bus paid)</td></tr>
+                            <tr><td class="py-1.5 pr-3 font-semibold whitespace-nowrap align-top">Nov 17</td><td class="py-1.5">Free day — ideas: Narai-juku post town, Snow Monkey Park, Tsumago–Magome walk</td></tr>
+                            <tr><td class="py-1.5 pr-3 font-semibold whitespace-nowrap align-top">Nov 18</td><td class="py-1.5">Matsumoto Castle, then bus to Takayama</td></tr>
+                            <tr><td class="py-1.5 pr-3 font-semibold whitespace-nowrap align-top">Nov 19</td><td class="py-1.5">Rest day; Takayama old town (Sanmachi), morning market</td></tr>
+                            <tr><td class="py-1.5 pr-3 font-semibold whitespace-nowrap align-top">Nov 20</td><td class="py-1.5">Takayama private tour</td></tr>
+                            <tr><td class="py-1.5 pr-3 font-semibold whitespace-nowrap align-top">Nov 21</td><td class="py-1.5">Hida-Furukawa (15-min train): Setogawa Canal koi; back for lunch and shopping</td></tr>
+                            <tr><td class="py-1.5 pr-3 font-semibold whitespace-nowrap align-top">Nov 22</td><td class="py-1.5">Train back to Ueno via Toyama</td></tr>
+                            <tr><td class="py-1.5 pr-3 font-semibold whitespace-nowrap align-top">Nov 23</td><td class="py-1.5">Narita → Busan</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="space-y-5">
+                    <div>
+                        <h3 class="font-bold text-slate-900 mb-2">Open decisions</h3>
+                        <ul class="list-disc list-inside space-y-1 text-xs">
+                            <li><strong>Nov 20 tour route.</strong> The guide offers (1) Shirakawa-go at a relaxed pace with a soba lunch he can reserve, (2) Shirakawa-go + one Gokayama village, or (3) Okuhida Onsen-go, Hirayu and Ankokuji Temple. A newer option: Shirakawa-go or Shinhotaka Ropeway in the morning, then Okuhida, Hida Folk Village or Takayama Jinya after lunch. Some of the group have already seen Shirakawa-go.</li>
+                            <li><strong>Nov 15 vs. Nov 17.</strong> One plan puts Togakushi on Nov 15 and Narai-juku on Nov 17; the paid bus is for Nov 16. Agree on the final order.</li>
+                            <li><strong>Nov 23 flight.</strong> One group plan says Delta to Korea; this itinerary's booking is Air Busan BX718. Confirm everyone's flight.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 mb-2">Possible duplicate bookings</h3>
+                        <ul class="list-disc list-inside space-y-1 text-xs">
+                            <li><strong>Nov 12:</strong> a GetYourGuide Nikko tour ($433.50, 8 AM, charged Nov 9) is still booked alongside the Sun Taxi van. It allows no luggage and returns to Tokyo. Free cancellation up to 24 hours before.</li>
+                            <li><strong>Nov 18:</strong> 3 seats on bus 26513 (10:55) in addition to the group's 6 seats on bus 26507 (13:05).</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 mb-2">Money to plan for</h3>
+                        <ul class="list-disc list-inside space-y-1 text-xs">
+                            <li>Nov 12 van: ¥12,500 per person in cash (card adds 5%).</li>
+                            <li>Paradise Hotel Busan: ₩2,014,650 due at check-in.</li>
+                            <li>Japanese hotels may add a city tax per person per night.</li>
+                            <li>Entrance fees and meals aren't included on the tours; bring cash.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 mb-2">Good to know</h3>
+                        <ul class="list-disc list-inside space-y-1 text-xs">
+                            <li>Kamikochi closes for winter from Nov 16.</li>
+                            <li>Public buses Takayama ↔ Shirakawa-go are sold out Nov 19–21.</li>
+                            <li>Luggage forwarding (Yamato "takkyubin") is available at hotel front desks; book the day before, delivery is usually next day.</li>
+                            <li>Matsumoto Station has coin lockers for the castle visit on Nov 18.</li>
+                            <li>All three booked tours use English-speaking guides.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
