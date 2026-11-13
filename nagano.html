@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikko to Nagano — Nov 14</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: {
+            fontFamily: { sans: ['Inter', 'sans-serif'] },
+            colors: { brand: { 50: '#f0f7ff', 100: '#e0effe', 500: '#2563eb', 600: '#1d4ed8', 700: '#1e40af', 900: '#0f172a' } }
+        } } }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; -webkit-font-smoothing: antialiased; }
+        .stop li { line-height: 1.4; margin-bottom: 0.3rem; }
+        @media print {
+            .no-print { display: none !important; }
+            body { background-color: #ffffff !important; font-size: 11pt; }
+            .shadow-sm { box-shadow: none !important; }
+            a { color: #000000 !important; }
+        }
+    </style>
+</head>
+<body class="min-h-screen py-6 px-3 sm:px-6">
+<div class="max-w-3xl mx-auto space-y-5">
+
+    <!-- Header -->
+    <header class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80">
+        <a href="index.html" class="no-print text-sm text-brand-600 hover:text-brand-700 font-medium inline-flex items-center gap-1.5 mb-3">
+            <i class="fa-solid fa-arrow-left"></i> Full itinerary
+        </a>
+        <h1 class="text-2xl font-bold text-slate-900">🚄 Nikko → Nagano</h1>
+        <p class="text-sm text-slate-500 mt-1">Sat Nov 14 · three trains, then an easy afternoon · dry, 5–16°C</p>
+        <div class="grid grid-cols-3 gap-2 mt-4 text-center">
+            <div class="bg-amber-50 border border-amber-200/70 rounded-xl p-2">
+                <span class="text-[11px] font-semibold text-amber-700 uppercase tracking-wide block">Taxi</span>
+                <span class="text-base font-bold text-slate-800">8:30 AM</span>
+            </div>
+            <div class="bg-slate-50 border border-slate-100 rounded-xl p-2">
+                <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wide block">First train</span>
+                <span class="text-base font-bold text-slate-800">9:15 AM</span>
+            </div>
+            <div class="bg-slate-50 border border-slate-100 rounded-xl p-2">
+                <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wide block">Arrive Nagano</span>
+                <span class="text-base font-bold text-slate-800">12:11 PM</span>
+            </div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%A1%E3%83%88%E3%83%AD%E3%83%9D%E3%83%AA%E3%82%BF%E3%83%B3%E9%95%B7%E9%87%8E%20%E9%95%B7%E9%87%8E%E7%9C%8C%E9%95%B7%E9%87%8E%E5%B8%82%E5%8D%97%E7%9F%B3%E5%A0%82%E7%94%BA1346" target="_blank" rel="noopener noreferrer"
+           class="no-print mt-4 w-full px-4 py-2.5 bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold rounded-xl transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-hotel"></i> Nagano hotel in Google Maps
+        </a>
+        <p class="text-xs text-slate-500 mt-3"><i class="fa-solid fa-person-cane mr-1"></i> Paced for someone who has trouble walking: every station on the route has elevators, and the hotel is joined to Nagano Station. Each <strong>Directions</strong> button opens directions from wherever you are.</p>
+    </header>
+
+    <!-- Tickets -->
+    <section class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
+        <h2 class="font-bold text-slate-900 mb-2"><i class="fa-solid fa-ticket text-brand-500 mr-1"></i> Tickets, top to bottom</h2>
+        <table class="w-full text-sm">
+            <tbody class="divide-y divide-slate-100">
+                <tr><td class="py-1.5 pr-3 font-medium">1. Fare ticket</td><td class="py-1.5 text-slate-500">Nikko → Nagano — used at every gate</td></tr>
+                <tr><td class="py-1.5 pr-3 font-medium">2. Yamabiko 130</td><td class="py-1.5 text-slate-500">Utsunomiya 10:35 → Omiya 10:59 · car 6</td></tr>
+                <tr><td class="py-1.5 pr-3 font-medium">3. Kagayaki 529</td><td class="py-1.5 text-slate-500">Omiya 11:13 → Nagano 12:11 · car 4</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Stops -->
+    <section class="space-y-3">
+
+        <!-- 1 -->
+        <article class="stop bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
+            <div class="flex items-start justify-between gap-3">
+                <div>
+                    <div class="text-xs font-semibold text-brand-600">1 · 8:20–8:30 AM</div>
+                    <h2 class="font-bold text-slate-900 text-lg">Check out, taxi to JR Nikko <span class="text-sm font-normal text-slate-500">JR日光駅</span></h2>
+                    <div class="text-xs text-slate-500">Two taxis for six with bags · ~7 min · about ¥1,000–1,500 each</div>
+                </div>
+                <a href="https://www.google.com/maps/dir/?api=1&amp;destination=JR%E6%97%A5%E5%85%89%E9%A7%85&amp;travelmode=driving" target="_blank" rel="noopener noreferrer" class="no-print shrink-0 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg inline-flex items-center gap-1"><i class="fa-solid fa-location-arrow"></i> Directions</a>
+            </div>
+            <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>Pay and check out at the 2F front desk by about 8:20; the taxi was booked for 8:30.</li>
+                <li>Tell the driver <strong>"JR Nikko eki"</strong> — Tobu Nikko is a different station on the same street.</li>
+                <li>Have the three Nov 14 tickets on top: fare ticket, Yamabiko, Kagayaki. Cash for the taxi.</li>
+            </ul>
+        </article>
+
+        <!-- 2 -->
+        <article class="stop bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 ring-1 ring-amber-200">
+            <div class="flex items-start justify-between gap-3">
+                <div>
+                    <div class="text-xs font-semibold text-brand-600">2 · 9:15 AM · <span class="text-amber-700">don't miss this one</span></div>
+                    <h2 class="font-bold text-slate-900 text-lg">JR Nikko Line to Utsunomiya <span class="text-sm font-normal text-slate-500">日光線</span></h2>
+                    <div class="text-xs text-slate-500">Local train · about 45 min · no reserved seats</div>
+                </div>
+            </div>
+            <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>At the gate, feed in the <strong>fare ticket only</strong> and take it back.</li>
+                <li>The train waits at the platform before leaving — board early and keep the bags by the doors.</li>
+                <li>Restroom at the station before boarding; the ride has no food service.</li>
+            </ul>
+        </article>
+
+        <!-- 3 -->
+        <article class="stop bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
+            <div class="flex items-start justify-between gap-3">
+                <div>
+                    <div class="text-xs font-semibold text-brand-600">3 · 10:35 AM</div>
+                    <h2 class="font-bold text-slate-900 text-lg">Yamabiko 130 to Omiya <span class="text-sm font-normal text-slate-500">宇都宮駅 → 大宮駅</span></h2>
+                    <div class="text-xs text-slate-500">Utsunomiya <strong>Track 4</strong> · <strong>car 6</strong> · 24 min</div>
+                </div>
+            </div>
+            <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>About 35 minutes to change. Follow the Shinkansen signs to the transfer gate (新幹線のりかえ口) and feed in the <strong>fare ticket + Yamabiko ticket together</strong>; take both back.</li>
+                <li>Elevators go up to the platform. Stand at the car 6 floor marking.</li>
+                <li>Time for a drink or a snack from the concourse shops before going up.</li>
+            </ul>
+        </article>
+
+        <!-- 4 -->
+        <article class="stop bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 ring-1 ring-amber-200">
+            <div class="flex items-start justify-between gap-3">
+                <div>
+                    <div class="text-xs font-semibold text-brand-600">4 · 10:59–11:13 AM · <span class="text-amber-700">14-min change</span></div>
+                    <h2 class="font-bold text-slate-900 text-lg">Change at Omiya for Kagayaki 529 <span class="text-sm font-normal text-slate-500">大宮駅</span></h2>
+                    <div class="text-xs text-slate-500">Arrive tracks 13–15 → leave from <strong>Track 18</strong> · <strong>car 4</strong></div>
+                </div>
+            </div>
+            <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>14 minutes, and you stay inside the Shinkansen area — no gate. Go down to the concourse, then up the escalator or elevator marked 17–18.</li>
+                <li>Go straight to Track 18 first, then shop: there are kiosks on the platform level for a bento.</li>
+                <li>Platforms can change — check the departure board for <strong>かがやき 529 / Kagayaki 529</strong>.</li>
+            </ul>
+        </article>
+
+        <!-- 5 -->
+        <article class="stop bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
+            <div class="flex items-start justify-between gap-3">
+                <div>
+                    <div class="text-xs font-semibold text-brand-600">5 · 12:11 PM</div>
+                    <h2 class="font-bold text-slate-900 text-lg">Arrive Nagano, drop bags at the hotel <span class="text-sm font-normal text-slate-500">ホテルメトロポリタン長野</span></h2>
+                    <div class="text-xs text-slate-500">Hotel Metropolitan Nagano · connected to the station (Zenkoji Exit side)</div>
+                </div>
+                <a href="https://www.google.com/maps/dir/?api=1&amp;destination=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%A1%E3%83%88%E3%83%AD%E3%83%9D%E3%83%AA%E3%82%BF%E3%83%B3%E9%95%B7%E9%87%8E%20%E9%95%B7%E9%87%8E%E7%9C%8C%E9%95%B7%E9%87%8E%E5%B8%82%E5%8D%97%E7%9F%B3%E5%A0%82%E7%94%BA1346&amp;travelmode=walking" target="_blank" rel="noopener noreferrer" class="no-print shrink-0 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg inline-flex items-center gap-1"><i class="fa-solid fa-location-arrow"></i> Directions</a>
+            </div>
+            <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>At the exit gate, feed in all three tickets — the gate keeps them.</li>
+                <li>Leave the luggage at the front desk; rooms are usually ready from mid-afternoon (ask what time).</li>
+                <li>There are <strong>two reservations</strong> (Nov 14, then Nov 15–18) — ask to keep the same room for all four nights.</li>
+            </ul>
+        </article>
+
+        <!-- 6 -->
+        <article class="stop bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
+            <div class="flex items-start justify-between gap-3">
+                <div>
+                    <div class="text-xs font-semibold text-brand-600">6 · ~12:30–1:30 PM</div>
+                    <h2 class="font-bold text-slate-900 text-lg">Lunch: Shinshu soba <span class="text-sm font-normal text-slate-500">信州そば</span></h2>
+                    <div class="text-xs text-slate-500">MIDORI building 3F, inside the station</div>
+                </div>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=MIDORI%E9%95%B7%E9%87%8E%203F%20%E3%81%9D%E3%81%B0" target="_blank" rel="noopener noreferrer" class="no-print shrink-0 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg inline-flex items-center gap-1"><i class="fa-solid fa-magnifying-glass"></i> Find nearby</a>
+            </div>
+            <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>Nagano is soba country. On MIDORI 3F: <strong>Kusabue</strong> (big portions, walnut dipping sauce; lunch until 3 PM) and <strong>Miyota</strong> next door (open all afternoon, English menu).</li>
+                <li>Not in a noodle mood: <strong>Meijitei</strong> on the same floor does sauce katsudon.</li>
+                <li>Two minutes outside the station, <strong>Ten</strong> serves 100% buckwheat soba with vegetarian and gluten-free options.</li>
+                <li>Saturday lunch lines are normal — put your name on the list and wait on the benches.</li>
+            </ul>
+        </article>
+
+        <!-- 7 -->
+        <article class="stop bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
+            <div class="flex items-start justify-between gap-3">
+                <div>
+                    <div class="text-xs font-semibold text-brand-600">7 · ~1:45–3:00 PM</div>
+                    <h2 class="font-bold text-slate-900 text-lg">Errands around the station <span class="text-sm font-normal text-slate-500">長野駅</span></h2>
+                    <div class="text-xs text-slate-500">All flat and within a 5-min walk</div>
+                </div>
+                <a href="https://www.google.com/maps/dir/?api=1&amp;destination=%E3%81%AA%E3%81%8C%E3%81%AE%E6%9D%B1%E6%80%A5%E7%99%BE%E8%B2%A8%E5%BA%97%20%E9%95%B7%E9%87%8E%E5%B8%82%E5%8D%97%E5%8D%83%E6%AD%B31-1-1&amp;travelmode=walking" target="_blank" rel="noopener noreferrer" class="no-print shrink-0 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg inline-flex items-center gap-1"><i class="fa-solid fa-location-arrow"></i> Directions</a>
+            </div>
+            <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li><strong>Daiso</strong>: 6th floor of the Nagano Tokyu department store, across from the Zenkoji Exit (10 AM–8 PM). Small but has the basics.</li>
+                <li><strong>JR ticket office</strong> (みどりの窓口) in the station: buy the Nov 18 Shinano seats here if you don't have them yet.</li>
+                <li><strong>MIDORI</strong> lower floors: local snacks, apples, oyaki dumplings, and a supermarket for tomorrow's breakfast.</li>
+                <li>No Uniqlo near the station — the closest is about 3 km away by taxi.</li>
+            </ul>
+        </article>
+
+        <!-- 8 -->
+        <article class="stop bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
+            <div class="flex items-start justify-between gap-3">
+                <div>
+                    <div class="text-xs font-semibold text-brand-600">8 · ~3:00 PM</div>
+                    <h2 class="font-bold text-slate-900 text-lg">Check in and rest <span class="text-sm font-normal text-slate-500">チェックイン</span></h2>
+                    <div class="text-xs text-slate-500">Superior Twin · coin laundry in the hotel</div>
+                </div>
+                <a href="https://www.google.com/maps/dir/?api=1&amp;destination=%E3%83%9B%E3%83%86%E3%83%AB%E3%83%A1%E3%83%88%E3%83%AD%E3%83%9D%E3%83%AA%E3%82%BF%E3%83%B3%E9%95%B7%E9%87%8E%20%E9%95%B7%E9%87%8E%E7%9C%8C%E9%95%B7%E9%87%8E%E5%B8%82%E5%8D%97%E7%9F%B3%E5%A0%82%E7%94%BA1346&amp;travelmode=walking" target="_blank" rel="noopener noreferrer" class="no-print shrink-0 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg inline-flex items-center gap-1"><i class="fa-solid fa-location-arrow"></i> Directions</a>
+            </div>
+            <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>Good afternoon for <strong>laundry</strong> — this is the first coin laundry since Tokyo.</li>
+                <li>Charge the pocket WiFi and phones.</li>
+                <li>Sunset is about 4:40 PM. Zenkoji is tomorrow, so there is nothing you need to rush out for.</li>
+            </ul>
+        </article>
+
+        <!-- 9 -->
+        <article class="stop bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
+            <div class="flex items-start justify-between gap-3">
+                <div>
+                    <div class="text-xs font-semibold text-brand-600">9 · ~6:00 PM</div>
+                    <h2 class="font-bold text-slate-900 text-lg">Dinner near the station <span class="text-sm font-normal text-slate-500">夕食</span></h2>
+                    <div class="text-xs text-slate-500">MIDORI 3F restaurants stay open until about 9:30–10 PM</div>
+                </div>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=%E9%95%B7%E9%87%8E%E9%A7%85%20%E3%83%AC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%B3%20%E5%A4%95%E9%A3%9F" target="_blank" rel="noopener noreferrer" class="no-print shrink-0 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg inline-flex items-center gap-1"><i class="fa-solid fa-magnifying-glass"></i> Find nearby</a>
+            </div>
+            <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>Easy option: back to MIDORI 3F. Local things to try: oyaki, Shinshu salmon, apple desserts, sake.</li>
+                <li>Evening will be about 5–8°C — a sweater and jacket for any walk outside.</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Tonight / tomorrow -->
+    <section class="bg-white rounded-2xl p-4 shadow-sm border border-amber-200">
+        <h2 class="font-bold text-slate-900 mb-2"><i class="fa-solid fa-bell text-amber-500 mr-1"></i> Tonight — set up tomorrow</h2>
+        <ul class="text-sm text-slate-700 list-disc pl-5 space-y-1">
+            <li><strong>Breakfast:</strong> tonight's booking doesn't include it (breakfast comes with the Nov 15–18 booking). Confirm at the desk, and pick up something from the station supermarket or plan a café.</li>
+            <li><strong>Tomorrow (Nov 15):</strong> Zenkoji Temple and Nakamise Street. Rain is possible, so put the folding umbrella in the day bag.</li>
+            <li><strong>Takayama room:</strong> free changes to the Nov 18–22 booking end tomorrow night — decide on a second room before then.</li>
+            <li><strong>If a train is missed:</strong> go to the staffed ticket window before boarding anything else; reserved seats can be moved to a later train once, free.</li>
+        </ul>
+    </section>
+
+    <!-- Phrases -->
+    <section class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
+        <h2 class="font-bold text-slate-900 mb-2"><i class="fa-solid fa-comments text-brand-500 mr-1"></i> Handy phrases</h2>
+        <table class="w-full text-sm">
+            <tbody class="divide-y divide-slate-100">
+                <tr><td class="py-1.5 pr-3 font-medium">JR Nikko eki made onegai shimasu</td><td class="py-1.5 text-slate-500">To JR Nikko Station, please</td></tr>
+                <tr><td class="py-1.5 pr-3 font-medium">Shinkansen noriba wa doko desu ka?</td><td class="py-1.5 text-slate-500">Where are the Shinkansen platforms?</td></tr>
+                <tr><td class="py-1.5 pr-3 font-medium">Erebētā wa doko desu ka?</td><td class="py-1.5 text-slate-500">Where is the elevator?</td></tr>
+                <tr><td class="py-1.5 pr-3 font-medium">Nimotsu o azukatte kudasai</td><td class="py-1.5 text-slate-500">Please hold our luggage</td></tr>
+                <tr><td class="py-1.5 pr-3 font-medium">Onaji heya de onegai shimasu</td><td class="py-1.5 text-slate-500">The same room, please</td></tr>
+                <tr><td class="py-1.5 pr-3 font-medium">Toire wa doko desu ka?</td><td class="py-1.5 text-slate-500">Where is the restroom?</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <p class="text-xs text-slate-400 text-center pb-4">Train times are from the tickets; platforms and shop hours were checked Nov 13, 2026 and may change on the day.</p>
+</div>
+</body>
+</html>
