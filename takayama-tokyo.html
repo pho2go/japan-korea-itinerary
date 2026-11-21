@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takayama to Tokyo — Nov 22</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = { theme: { extend: {
+            fontFamily: { sans: ['Inter', 'sans-serif'] },
+            colors: { brand: { 50: '#f0f7ff', 100: '#e0effe', 500: '#2563eb', 600: '#1d4ed8', 700: '#1e40af', 900: '#0f172a' } }
+        } } }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; -webkit-font-smoothing: antialiased; }
+        .stop li { line-height: 1.4; margin-bottom: 0.3rem; }
+        @media print {
+            .no-print { display: none !important; }
+            body { background-color: #ffffff !important; font-size: 11pt; }
+            .shadow-sm { box-shadow: none !important; }
+            a { color: #000000 !important; }
+        }
+    </style>
+</head>
+<body class="min-h-screen py-6 px-3 sm:px-6">
+<div class="max-w-3xl mx-auto space-y-5">
+
+    <!-- Header -->
+    <header class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80">
+        <a href="index.html" class="no-print text-sm text-brand-600 hover:text-brand-700 font-medium inline-flex items-center gap-1.5 mb-3">
+            <i class="fa-solid fa-arrow-left"></i> Full itinerary
+        </a>
+        <h1 class="text-2xl font-bold text-slate-900">🚄 Takayama → Toyama → Ueno</h1>
+        <p class="text-sm text-slate-500 mt-1">Sun Nov 22 · two trains, one change · Takayama −2 to 4°C (28–39°F), dry · Tokyo 5–13°C (41–55°F)</p>
+        <div class="mt-3 bg-amber-50 border border-amber-200 rounded-xl p-3 text-sm text-slate-800">
+            <strong class="text-amber-800"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Holiday weekend + early snow:</strong> Mon Nov 23 is a public holiday, so stations and trains will be busier than a normal Sunday — your seats are reserved, so you're fine. The first snow of the season closed the expressways around Takayama on Nov 20. Trains cope far better than roads, but <strong>check the Takayama Line status before you leave the hotel</strong> (step 2).
+        </div>
+        <div class="grid grid-cols-3 gap-2 mt-4 text-center">
+            <div class="bg-amber-50 border border-amber-200/70 rounded-xl p-2">
+                <span class="text-[11px] font-semibold text-amber-700 uppercase tracking-wide block">Leave hotel</span>
+                <span class="text-base font-bold text-slate-800">10:30 AM</span>
+            </div>
+            <div class="bg-amber-50 border border-amber-200/70 rounded-xl p-2">
+                <span class="text-[11px] font-semibold text-amber-700 uppercase tracking-wide block">First train</span>
+                <span class="text-base font-bold text-slate-800">11:03 AM</span>
+            </div>
+            <div class="bg-slate-50 border border-slate-100 rounded-xl p-2">
+                <span class="text-[11px] font-semibold text-slate-400 uppercase tracking-wide block">Arrive Ueno</span>
+                <span class="text-base font-bold text-slate-800">3:14 PM</span>
+            </div>
+        </div>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;origin=%E9%AB%98%E5%B1%B1%E9%A7%85&amp;destination=Hotel%20Crown%20Hills%20Ueno%20Premier&amp;destination_place_id=ChIJG-r5XJ-OGGARwJj5DTuWZzQ&amp;travelmode=transit" target="_blank" rel="noopener noreferrer"
+           class="no-print mt-4 w-full px-4 py-2.5 bg-brand-600 hover:bg-brand-700 text-white text-sm font-semibold rounded-xl transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-route"></i> Whole route in Google Maps, Takayama Station → hotel
+        </a>
+        <a href="https://www.google.com/maps/dir/?api=1&amp;origin=Takayama%20Ouan%20Hotel&amp;origin_place_id=ChIJcc04vCe7AmART66G1eelXXA&amp;destination=%E9%AB%98%E5%B1%B1%E9%A7%85&amp;travelmode=walking" target="_blank" rel="noopener noreferrer"
+           class="no-print mt-2 w-full px-4 py-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm font-semibold rounded-xl transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-person-walking"></i> Walk: Ouan → JR Takayama Station
+        </a>
+        <p class="text-xs text-slate-500 mt-2">Google Maps picks trains by the current time: tap <strong>Depart at</strong> and set <strong>Sun 11:03 AM</strong>. It may suggest other routes (for example via Nagoya) — use it for the map, and <strong>follow the times here and on your tickets</strong>.</p>
+        <p class="text-xs text-slate-500 mt-3"><i class="fa-solid fa-person-cane mr-1"></i> Paced for someone who has trouble walking: Toyama and Ueno both have elevators between every gate and platform. Ueno's Shinkansen platforms are deep underground, so use the elevators there.</p>
+    </header>
+
+    <!-- Tickets -->
+    <section class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
+        <h2 class="font-bold text-slate-900 mb-2"><i class="fa-solid fa-ticket text-brand-500 mr-1"></i> Tickets, top to bottom</h2>
+        <table class="w-full text-sm">
+            <tbody class="divide-y divide-slate-100">
+                <tr><td class="py-1.5 pr-3 font-medium">1. Fare ticket</td><td class="py-1.5 text-slate-500">Takayama → Tokyo Ward Area (valid 4 days) — used at every gate</td></tr>
+                <tr><td class="py-1.5 pr-3 font-medium">2. Hida 3</td><td class="py-1.5 text-slate-500">Takayama 11:03 → Toyama 12:32 · <strong>car 10</strong> · reserved</td></tr>
+                <tr><td class="py-1.5 pr-3 font-medium">3. Kagayaki 532</td><td class="py-1.5 text-slate-500">Toyama 13:11 (Track 12) → Ueno 15:14 (Track 22) · <strong>car 5</strong> · reserved</td></tr>
+            </tbody>
+        </table>
+        <p class="text-xs text-slate-500 mt-2">Keep all three together in this order. Each person sits in the seat printed on their own ticket.</p>
+    </section>
+
+    <!-- Stops -->
+    <section class="space-y-3">
+
+        <!-- 1 -->
+        <article class="stop bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
+            <div class="flex items-start justify-between gap-3">
+                <div>
+                    <div class="text-xs font-semibold text-brand-600">1 · 7:00–10:30 AM</div>
+                    <h2 class="font-bold text-slate-900 text-lg">Last morning in Takayama <span class="text-sm font-normal text-slate-500">高山桜庵</span></h2>
+                    <div class="text-xs text-slate-500">Breakfast, a last onsen soak, pack · check-out is 11:00 but leave by 10:30</div>
+                </div>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%AE%AE%E5%B7%9D%E6%9C%9D%E5%B8%82" target="_blank" rel="noopener noreferrer" class="no-print shrink-0 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg inline-flex items-center gap-1"><i class="fa-solid fa-location-arrow"></i> Market</a>
+            </div>
+            <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li><strong>Early riser?</strong> The Miyagawa morning market by the river is a 10-minute walk — good for a last snack or souvenir. Be back by 9:30. It'll be below freezing first thing; sidewalks may be icy in the shade.</li>
+                <li><strong>Suitcases sent by Yamato yesterday?</strong> Keep the receipt slip in your day bag — Crown Hills will ask for the name on the label. If you didn't send them, they come on the train (see step 3).</li>
+                <li><strong>Check out</strong> at the front desk. Return the <strong>shoe-locker key</strong> (下足箱) with the room key and collect your shoes at the entrance.</li>
+                <li>Day bag: tickets, passports, a snack and water, and a jacket you can take off — trains are warm, Tokyo will be milder.</li>
+            </ul>
+        </article>
+
+        <!-- 2 -->
+        <article class="stop bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
+            <div class="flex items-start justify-between gap-3">
+                <div>
+                    <div class="text-xs font-semibold text-brand-600">2 · 10:30–10:45 AM</div>
+                    <h2 class="font-bold text-slate-900 text-lg">Walk to JR Takayama Station <span class="text-sm font-normal text-slate-500">JR高山駅</span></h2>
+                    <div class="text-xs text-slate-500">About 5–10 min, flat · taxi if the sidewalks are icy</div>
+                </div>
+                <a href="https://www.google.com/maps/dir/?api=1&amp;origin=Takayama%20Ouan%20Hotel&amp;origin_place_id=ChIJcc04vCe7AmART66G1eelXXA&amp;destination=%E9%AB%98%E5%B1%B1%E9%A7%85&amp;travelmode=walking" target="_blank" rel="noopener noreferrer" class="no-print shrink-0 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg inline-flex items-center gap-1"><i class="fa-solid fa-location-arrow"></i> Directions</a>
+            </div>
+            <ol class="mt-2 text-sm text-slate-700 list-decimal pl-5">
+                <li><strong>Before leaving the hotel:</strong> ask the front desk <strong>"Takayama-sen wa futsū ni ugoite imasu ka?"</strong> (Is the Takayama Line running normally?) — or check the departure board as soon as you walk in.</li>
+                <li>If it's icy or the walk is too much with bags, ask the desk to call a taxi: <strong>"Takayama eki made takushī o onegai shimasu."</strong> It's a very short ride.</li>
+                <li>At the station, find <strong>ひだ3号 富山 11:03</strong> on the departure board — it shows the track number (番線).</li>
+                <li>Feed the <strong>fare ticket and the Hida ticket together</strong> into the gate and take both back. If the gate rejects them, show them at the staffed window beside the gates.</li>
+                <li>Go to the platform by about <strong>10:50</strong>. Find the <strong>car 10 (10号車)</strong> marker. Some Hida trains split or join cars at Takayama, so check the number on the car's door before boarding.</li>
+                <li><strong>If the line is suspended by snow:</strong> don't wait on the platform. Go to the JR ticket office (みどりの窓口) with all your tickets and ask for the best way to Tokyo today — usually south via Nagoya and the Tokaido Shinkansen. Your seats and fare can be changed there.</li>
+            </ol>
+        </article>
+
+        <!-- 3 -->
+        <article class="stop bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 ring-1 ring-amber-200">
+            <div class="flex items-start justify-between gap-3">
+                <div>
+                    <div class="text-xs font-semibold text-brand-600">3 · 11:03 AM → 12:32 PM</div>
+                    <h2 class="font-bold text-slate-900 text-lg">Limited Express Hida 3 to Toyama <span class="text-sm font-normal text-slate-500">特急ひだ3号</span></h2>
+                    <div class="text-xs text-slate-500"><strong>Car 10</strong> · about 1½ hours · <strong>Toyama is the last stop</strong></div>
+                </div>
+                <a href="https://www.google.com/maps/dir/?api=1&amp;origin=%E9%AB%98%E5%B1%B1%E9%A7%85&amp;destination=%E5%AF%8C%E5%B1%B1%E9%A7%85&amp;travelmode=transit" target="_blank" rel="noopener noreferrer" class="no-print shrink-0 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg inline-flex items-center gap-1"><i class="fa-solid fa-train"></i> Route</a>
+            </div>
+            <ol class="mt-2 text-sm text-slate-700 list-decimal pl-5">
+                <li>Board car 10 and sit in your reserved seats. Big suitcases go behind the last row of seats or at the end of the car; carry-ons on the overhead rack.</li>
+                <li>The train follows the Miyagawa and Jinzu river gorges north through the mountains — the best scenery of the day, probably with fresh snow.</li>
+                <li>This is the only Hida to Toyama in the morning, which is why it's busy. Toyama is the end of the line, so <strong>there's no rush to get off</strong> — just don't leave anything on board.</li>
+                <li>Use the train's restroom before arriving if you need it; Toyama's are also easy to find.</li>
+            </ol>
+        </article>
+
+        <!-- 4 -->
+        <article class="stop bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
+            <div class="flex items-start justify-between gap-3">
+                <div>
+                    <div class="text-xs font-semibold text-brand-600">4 · 12:32–1:11 PM · 39-min change</div>
+                    <h2 class="font-bold text-slate-900 text-lg">Change at Toyama for the Shinkansen <span class="text-sm font-normal text-slate-500">富山駅</span></h2>
+                    <div class="text-xs text-slate-500">Kagayaki 532 leaves from <strong>Track 12</strong> · <strong>car 5</strong> · elevators all the way</div>
+                </div>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=%E5%AF%8C%E5%B1%B1%E9%A7%85%20%E6%96%B0%E5%B9%B9%E7%B7%9A%E6%94%B9%E6%9C%AD" target="_blank" rel="noopener noreferrer" class="no-print shrink-0 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg inline-flex items-center gap-1"><i class="fa-solid fa-location-arrow"></i> Map</a>
+            </div>
+            <ol class="mt-2 text-sm text-slate-700 list-decimal pl-5">
+                <li><strong>Getting off:</strong> follow the green signs <strong>新幹線 / Shinkansen</strong> to the <strong>Shinkansen transfer gate (新幹線のりかえ口)</strong>. Don't go out through a regular exit.</li>
+                <li>Feed <strong>all three tickets together</strong> (fare + Hida + Kagayaki). The gate <strong>keeps the Hida ticket</strong> and returns the fare and Kagayaki tickets — take both. If the gate won't take them, use the staffed window next to it.</li>
+                <li><strong>Lunch inside the Shinkansen area:</strong> look for an ekiben (station bento) shop. Toyama's classic is <strong>masu-zushi</strong> (pressed trout sushi in a round wooden box). Eat it on the train.</li>
+                <li>Go up to <strong>Track 12</strong> by about <strong>1:00 PM</strong>. The Shinkansen platforms have safety doors; find the <strong>car 5 (5号車)</strong> marker and check the board shows <strong>かがやき 532 · 13:11 · 東京</strong>.</li>
+                <li><strong>Plenty of time:</strong> the walk is 5–10 minutes. Only if you have 20+ minutes spare and want to browse: the Tōyamarché shops are outside the gates — but you'd need staff help to re-enter, so we suggest staying inside.</li>
+            </ol>
+        </article>
+
+        <!-- 5 -->
+        <article class="stop bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80 ring-1 ring-amber-200">
+            <div class="flex items-start justify-between gap-3">
+                <div>
+                    <div class="text-xs font-semibold text-brand-600">5 · 1:11 PM → 3:14 PM</div>
+                    <h2 class="font-bold text-slate-900 text-lg">Hokuriku Shinkansen Kagayaki 532 <span class="text-sm font-normal text-slate-500">かがやき532号</span></h2>
+                    <div class="text-xs text-slate-500"><strong>Car 5</strong> · all seats reserved · stops: Nagano 1:56 → Omiya 2:55 → <strong>Ueno 3:14</strong></div>
+                </div>
+                <a href="https://www.google.com/maps/dir/?api=1&amp;origin=%E5%AF%8C%E5%B1%B1%E9%A7%85&amp;destination=%E4%B8%8A%E9%87%8E%E9%A7%85&amp;travelmode=transit" target="_blank" rel="noopener noreferrer" class="no-print shrink-0 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg inline-flex items-center gap-1"><i class="fa-solid fa-train"></i> Route</a>
+            </div>
+            <ol class="mt-2 text-sm text-slate-700 list-decimal pl-5">
+                <li>Board car 5 and find your seats. Big suitcases go behind the last row of seats; there's also a little space at the car ends.</li>
+                <li>Sit back — it's about 2 hours. You'll pass back through <strong>Nagano</strong> (1:56) and <strong>Omiya</strong> (2:55).</li>
+                <li><strong>Ueno is the stop after Omiya.</strong> Once you leave Omiya (2:56), start getting coats on and bags down. The train only stops about one minute at Ueno.</li>
+                <li><strong>Get off at Ueno, not Tokyo.</strong> The train continues to Tokyo Station (3:20) — staying on means backtracking.</li>
+            </ol>
+        </article>
+
+        <!-- 6 -->
+        <article class="stop bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
+            <div class="flex items-start justify-between gap-3">
+                <div>
+                    <div class="text-xs font-semibold text-brand-600">6 · 3:14–3:35 PM</div>
+                    <h2 class="font-bold text-slate-900 text-lg">Ueno Station → the hotel <span class="text-sm font-normal text-slate-500">上野駅</span></h2>
+                    <div class="text-xs text-slate-500">Arrive Track 22, <strong>4 floors underground</strong> · exit by the Main Entrance (正面玄関口) · 3–7 min walk</div>
+                </div>
+                <a href="https://www.google.com/maps/dir/?api=1&amp;origin=%E4%B8%8A%E9%87%8E%E9%A7%85&amp;destination=Hotel%20Crown%20Hills%20Ueno%20Premier&amp;destination_place_id=ChIJG-r5XJ-OGGARwJj5DTuWZzQ&amp;travelmode=walking" target="_blank" rel="noopener noreferrer" class="no-print shrink-0 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg inline-flex items-center gap-1"><i class="fa-solid fa-location-arrow"></i> Directions</a>
+            </div>
+            <ol class="mt-2 text-sm text-slate-700 list-decimal pl-5">
+                <li><strong>Getting off:</strong> Ueno's Shinkansen platforms are on <strong>B4</strong>. Take the escalator or elevator up to the <strong>B3 concourse</strong>, then keep going up to the ground floor (1F). Long escalators — use the elevator for the member with the cane and the big bags.</li>
+                <li>At the <strong>Shinkansen exit gate</strong> on 1F, feed the <strong>fare ticket and the Kagayaki ticket together</strong>. The gate keeps both — nothing comes back.</li>
+                <li>Head for the <strong>Main Entrance (正面玄関口)</strong> on the Central Gate side. A recent hotel guest's directions: from the main exit, <strong>cross the street, turn left, then right</strong>. They warn that Google's suggested "Exit 3" has a lot of stairs — avoid it with luggage.</li>
+                <li>It's about 3–7 minutes on foot. If anyone's tired, the taxi rank is right outside — one short ride.</li>
+            </ol>
+        </article>
+
+        <!-- 7 -->
+        <article class="stop bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
+            <div class="flex items-start justify-between gap-3">
+                <div>
+                    <div class="text-xs font-semibold text-brand-600">7 · ~3:35 PM</div>
+                    <h2 class="font-bold text-slate-900 text-lg">Check in: Hotel Crown Hills Ueno Premier <span class="text-sm font-normal text-slate-500">ホテルクラウンヒルズ上野プレミア</span></h2>
+                    <div class="text-xs text-slate-500">2-16-1 Higashi-Ueno · 2 double rooms (city view) · breakfast included · check-out 10 AM</div>
+                </div>
+                <a href="https://www.google.com/maps/search/?api=1&amp;query=Hotel%20Crown%20Hills%20Ueno%20Premier&amp;query_place_id=ChIJG-r5XJ-OGGARwJj5DTuWZzQ" target="_blank" rel="noopener noreferrer" class="no-print shrink-0 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg inline-flex items-center gap-1"><i class="fa-solid fa-hotel"></i> Map</a>
+            </div>
+            <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li>Show passports. Ask for any <strong>suitcases delivered by Yamato</strong> under your booking name.</li>
+                <li>Ask the desk to <strong>book a taxi for 7:30 AM tomorrow</strong> to <strong>Keisei-Ueno Station</strong> (for the Skyliner): <strong>"Ashita no asa shichi-ji han, Keisei Ueno eki made takushī o yoyaku dekimasu ka?"</strong></li>
+                <li>Free amenities are picked up at the reception area. No self-service laundry here — see step 8.</li>
+            </ul>
+        </article>
+
+        <!-- 8 -->
+        <article class="stop bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
+            <div class="flex items-start justify-between gap-3">
+                <div>
+                    <div class="text-xs font-semibold text-brand-600">8 · Evening</div>
+                    <h2 class="font-bold text-slate-900 text-lg">Errands, laundry, dinner <span class="text-sm font-normal text-slate-500">上野</span></h2>
+                    <div class="text-xs text-slate-500">All within a 5–10 min walk</div>
+                </div>
+                <a href="https://www.google.com/maps/dir/?api=1&amp;origin=Hotel%20Crown%20Hills%20Ueno%20Premier&amp;origin_place_id=ChIJG-r5XJ-OGGARwJj5DTuWZzQ&amp;destination=Coin%20Laundry%20Senkanyamato%20Higashi-Ueno&amp;destination_place_id=ChIJd2GnTYSPGGAR_JqQ277rPjU&amp;travelmode=walking" target="_blank" rel="noopener noreferrer" class="no-print shrink-0 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-semibold rounded-lg inline-flex items-center gap-1"><i class="fa-solid fa-shirt"></i> Laundry</a>
+            </div>
+            <ul class="mt-2 text-sm text-slate-700 list-disc pl-5">
+                <li><strong>Skyliner e-ticket</strong> for the ~8:00 AM train tomorrow, if not bought yet — online, or at the <strong>Keisei-Ueno ticket counter</strong> (west side of JR Ueno, by Ueno Park). Nov 23 is a holiday, so reserve.</li>
+                <li><strong>Coin laundry:</strong> Coin Laundry Senkanyamato Higashi-Ueno (1-25-3 Higashi-Ueno), about 5 min, open 24 hours, takes cards, detergent added automatically. To air-dry a jacket, use a <strong>wash-only machine</strong>, then put the rest in a separate dryer.</li>
+                <li><strong>Dinner:</strong> Ameyoko market street, across from the station — izakaya, sushi, street food. Busy on a holiday-weekend Sunday.</li>
+                <li><strong>Spend down coins:</strong> yen coins can't be changed back. Convenience-store snacks for the flight are a good use.</li>
+                <li><strong>Pack for Korea</strong> and charge the pocket WiFi and phones.</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Tomorrow -->
+    <section class="bg-white rounded-2xl p-4 shadow-sm border border-amber-200">
+        <h2 class="font-bold text-slate-900 mb-2"><i class="fa-solid fa-bell text-amber-500 mr-1"></i> Tonight — set up tomorrow (Mon Nov 23, flight to Busan)</h2>
+        <ul class="text-sm text-slate-700 list-disc pl-5 space-y-1">
+            <li><strong>7:30 AM:</strong> taxi to Keisei-Ueno (about 5 min). Walking with luggage is 10–15 min, across to the other side of JR Ueno.</li>
+            <li><strong>~8:00 AM:</strong> Skyliner to Narita (holiday timetable — keep the reserved seat).</li>
+            <li><strong>At Narita:</strong> mail back the <strong>pocket WiFi</strong> in its prepaid envelope, and return the <strong>Suica cards</strong> at the JR East ticket office for the deposit refund.</li>
+            <li><strong>Before the flight:</strong> set up a <strong>Korea eSIM</strong> (the Japan eSIM and router stop working at the border) and download <strong>Naver Map</strong> and <strong>Papago</strong>.</li>
+            <li><strong>Confirm everyone's flight</strong> (Air Busan BX718 on this itinerary) and the <strong>checked-bag allowance</strong>.</li>
+            <li><strong>Cards:</strong> pay in yen/won, never USD. The Chase Marriott card has no foreign transaction fee.</li>
+        </ul>
+    </section>
+
+    <!-- Phrases -->
+    <section class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200/80">
+        <h2 class="font-bold text-slate-900 mb-2"><i class="fa-solid fa-comments text-brand-500 mr-1"></i> Handy phrases</h2>
+        <table class="w-full text-sm">
+            <tbody class="divide-y divide-slate-100">
+                <tr><td class="py-1.5 pr-3 font-medium">Takayama-sen wa futsū ni ugoite imasu ka?</td><td class="py-1.5 text-slate-500">Is the Takayama Line running normally?</td></tr>
+                <tr><td class="py-1.5 pr-3 font-medium">Takayama eki made takushī o onegai shimasu</td><td class="py-1.5 text-slate-500">A taxi to Takayama Station, please</td></tr>
+                <tr><td class="py-1.5 pr-3 font-medium">Shinkansen norikae-guchi wa doko desu ka?</td><td class="py-1.5 text-slate-500">Where is the Shinkansen transfer gate?</td></tr>
+                <tr><td class="py-1.5 pr-3 font-medium">Erebētā wa doko desu ka?</td><td class="py-1.5 text-slate-500">Where is the elevator?</td></tr>
+                <tr><td class="py-1.5 pr-3 font-medium">Shōmen genkan-guchi wa dochira desu ka?</td><td class="py-1.5 text-slate-500">Which way to the Main Entrance?</td></tr>
+                <tr><td class="py-1.5 pr-3 font-medium">Takkyūbin no nimotsu wa todoite imasu ka?</td><td class="py-1.5 text-slate-500">Has our Yamato luggage arrived?</td></tr>
+                <tr><td class="py-1.5 pr-3 font-medium">Toire wa doko desu ka?</td><td class="py-1.5 text-slate-500">Where is the restroom?</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <p class="text-xs text-slate-400 text-center pb-4">Kagayaki 532 times and tracks (Toyama 13:11 from Track 12, Ueno 15:14 on Track 22) are from JR East's timetable for Nov 22, 2026; Hida 3 times are from the tickets. Ueno's Shinkansen platforms are on B4 per JR East. Track numbers and layouts can change on the day — the departure boards and station staff have the final word. Checked Nov 21, 2026.</p>
+</div>
+</body>
+</html>
